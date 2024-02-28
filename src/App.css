@@ -14,6 +14,7 @@
   --text-color: hsl(var(--hue), var(--sat), 46%);
   --body-color: hsl(var(--hue), var(--sat), 98%);
   --container-color: #fff;
+  --light-mode : hsl(var(--hue), var(--sat), 98%);
 
   /*========== Font and typography ==========*/
   --body-font: "Poppins", sans-serif;
@@ -49,6 +50,9 @@
   --z-fixed: 100;
   --z-modal: 1000;
 }
+
+
+
 
 /* Responsive typography */
 @media screen and (max-width: 992px) {
@@ -158,7 +162,9 @@ img {
 
 .button:hover {
   background-color: var(--title-color-dark);
+  transition: .8s;
 }
+
 
 .button__icon {
   margin-left: var(--mb-0-5);
